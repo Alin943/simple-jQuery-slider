@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+
+.people-section {
+  padding: 5rem 0 5rem;
+}
+.people-filter {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.people-filter .btn {
+  padding: 0.75rem 0.75rem;
+  background-color: rgb(155, 150, 150);
+  color: #fff;
+  margin-left: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.btn.active {
+  background-color: #fb839e;
+  color: #fff;
+}
+.people-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  margin: 3.75rem 0 1.5rem;
+  /* display: none; */
+}
+/* FIXME */
+/* COMMENT */
+.people-item-inner {
+  background-color: #ccc;
+  padding: 15px;
+  text-align: center;
+}
+.people-item-inner img {
+  width: 100%;
+  margin-top: -3.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+.people-item-inner:hover img {
+  transform: scale(0.9);
+}
+.people-item-inner h4 {
+  text-transform: uppercase;
+  color: #515a5a;
+  margin: 0.625rem 0 0.3125rem;
+  font-weight: 500;
+}
+.people-item-inner span {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 13px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.people-item-inner .social-links-people ul {
+  margin: 0;
+  padding: 0;
+}
+.people-item-inner .social-links-people ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.people-item-inner .social-links-people ul li a {
+  text-decoration: none;
+  color: #fb839e;
+  cursor: pointer;
+}
+.people-item-inner .social-links-people ul li a > i {
+  font-size: 1.125rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fb839e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s ease;
+}
